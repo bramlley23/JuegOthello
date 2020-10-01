@@ -13,5 +13,12 @@ namespace RegistroUsuario
         {
 
         }
+
+        protected void btnJugador1vsJugador2_Click(object sender, EventArgs e)
+        {
+            TableroJugador1_VRS_Jugador2 j1VRsj2 = new TableroJugador1_VRS_Jugador2();
+            Response.Redirect("TableroJugador1_VRS_Jugador2.aspx");
+
+        }
     }
 }
