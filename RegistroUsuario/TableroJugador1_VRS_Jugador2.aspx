@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
    <style >        body {
-            background-color:steelblue;
+            background-color:lightseagreen;
         }
     </style>
     </head>
@@ -65,28 +65,28 @@
                     </td>
 
                     <td>
-                        <asp:Button ID="Button13" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button14" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button15" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button16" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button17" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button18" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button19" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button20" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button21" runat="server" BackColor="#666666" Height="40px" Text="1" Width="40px" />
@@ -106,34 +106,34 @@
                         <asp:Button ID="Button22" runat="server" BackColor="#666666" Height="40px" Text="2" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button23" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button24" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button25" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button26" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button27" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button28" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button29" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button30" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button31" runat="server" BackColor="#666666" Height="40px" Text="2" Width="40px" />
                     </tD>
                      <td style="background-color: #FFFF00"></td>
-                     <td style="background-color: #FFFF00">Movimiento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Movimiento</td>
+                     <td style="background-color: #FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Movimiento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Movimiento</td>
                     </tr>
 
 
@@ -143,34 +143,35 @@
                         <asp:Button ID="Button32" runat="server" BackColor="#666666" Height="40px" Text="3" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button33" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button34" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button35" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button36" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button37" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button38" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button39" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button40" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button41" runat="server" BackColor="#666666" Height="40px" Text="3" Width="40px" />
                     </tD>
                      <td style="background-color: #FFFF00"></td>
                      <td style="background-color: #FFFF00">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                          <asp:TextBox ID="TextBox1" runat="server" Width="61px"></asp:TextBox>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                          <asp:TextBox ID="TextBox2" runat="server" Width="61px"></asp:TextBox>
@@ -184,34 +185,34 @@
                         <asp:Button ID="Button42" runat="server" BackColor="#666666" Height="40px" Text="4" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button43" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button44" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button45" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button46" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" OnClick="D4_Click" Font-Size="Medium" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button47" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" OnClick="E4_Click" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button48" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button49" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button50" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button51" runat="server" BackColor="#666666" Height="40px" Text="4" Width="40px" />
                     </tD>
                      <td style="background-color: #FFFF00"></td>
-                     <td style="background-color: #FFFF00">Fichas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fichas</td>
+                     <td style="background-color: #FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fichas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fichas</td>
                     </tr>
 
 
@@ -221,34 +222,35 @@
                         <asp:Button ID="Button52" runat="server" BackColor="#666666" Height="40px" Text="5" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button53" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button54" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button55" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button56" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" OnClick="D5_Click" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button57" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" OnClick="E5_Click" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button58" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button59" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button60" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button61" runat="server" BackColor="#666666" Height="40px" Text="5" Width="40px" />
                     </tD>
                      <td style="background-color: #FFFF00"></td>
                      <td style="background-color: #FFFF00">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                          <asp:TextBox ID="TextBox3" runat="server" Width="61px"></asp:TextBox>
 
                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -264,28 +266,28 @@
                         <asp:Button ID="Button62" runat="server" BackColor="#666666" Height="40px" Text="6" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button63" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button64" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button65" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button66" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button67" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button68" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button69" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button70" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button71" runat="server" BackColor="#666666" Height="40px" Text="6" Width="40px" />
@@ -301,28 +303,28 @@
                         <asp:Button ID="Button72" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button73" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button74" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button75" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button76" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button77" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button78" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button79" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button80" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button81" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
@@ -336,28 +338,28 @@
                         <asp:Button ID="Button82" runat="server" BackColor="#666666" Height="40px" Text="8" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="Button83" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="A8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button84" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="B8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button85" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="C8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button86" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="D8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button87" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="E8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button88" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="F8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </td>
                       <td>
-                        <asp:Button ID="Button89" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="G8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
-                        <asp:Button ID="Button90" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
+                        <asp:Button ID="H8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" />
                     </tD>
                       <td>
                         <asp:Button ID="Button91" runat="server" BackColor="#666666" Height="40px" Text="8" Width="40px" />
