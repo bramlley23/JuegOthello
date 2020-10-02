@@ -411,22 +411,22 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button41;
 
         /// <summary>
-        /// Control TextBox1.
+        /// Control txtJugador1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtJugador1;
 
         /// <summary>
-        /// Control TextBox2.
+        /// Control txtJugador2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtJugador2;
 
         /// <summary>
         /// Control Button42.
@@ -609,22 +609,22 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button61;
 
         /// <summary>
-        /// Control TextBox3.
+        /// Control txtFicha1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtFicha1;
 
         /// <summary>
-        /// Control TextBox4.
+        /// Control txtFicha2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox txtFicha2;
 
         /// <summary>
         /// Control Button62.

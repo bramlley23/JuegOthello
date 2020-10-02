@@ -11,19 +11,50 @@ namespace RegistroUsuario
 {
     public partial class TableroJugador1_VRS_Jugador2 : System.Web.UI.Page
     {
+        private int movimientoJuador1 = 1;
+        private int movimientoJugador2 = 1;
+
+        private int estado1 = 0;
+        private int estado2 = 1;
         System.Drawing.Image img;
-        int turno = 1;
+        
+
 
         Button seleccionado = null;
         private object blanco;
+
+        //metodo page_load
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                txtJugador1.Text = "0";
+              
 
+            }
+        }
+
+        //metodo para contar los movimentos de los jugadores
+        public  void contarMovimientosBlancos() {
+            
+            if(ViewState["juga1"] != null)
+            {
+                movimientoJugador2 = (int) ViewState["juga1"] + 1;
+            }
+            txtJugador2.Text = movimientoJugador2.ToString();
+            ViewState["juga1"] = movimientoJugador2;
         }
 
         protected void D4_Click(object sender, EventArgs e)
         {
             seleccionFichaBlanca(sender);
+            if(ViewState["click"] != null)
+            {
+                movimientoJuador1 = (int)ViewState["click"] + 1;
+            }
+            txtJugador1.Text = movimientoJuador1.ToString();
+            ViewState["click"] = movimientoJuador1;
+
         }
 
         //Metodo para seleccionar ficha color Blanco
@@ -34,6 +65,9 @@ namespace RegistroUsuario
             seleccionado = ficha;
             ficha.Text = "\u26C0";
             seleccionado = ficha;
+
+          
+
         }
 
         //metodo para seleccionar ficna color negra
@@ -49,6 +83,9 @@ namespace RegistroUsuario
         protected void E4_Click(object sender, EventArgs e)
         {
             seleccionFichaNegra(sender);
+           contarMovimientosBlancos();
+
+           
         }
 
         protected void D5_Click(object sender, EventArgs e)
@@ -60,5 +97,19 @@ namespace RegistroUsuario
         {
             seleccionFichaBlanca(sender);
         }
+        //***********************************************************
+        //*********    Metodo para dar turnos de la fichas    *******
+        //***********************************************************
+
+        protected void turnoDeJuego(object sender, CommandEventArgs e)
+        {
+            int contador1 = 1;   //  contador de jugador 1
+            int contador2 = 1;   //  contador de jugador 2
+            if(e.CommandName == "A1")
+            {
+                seleccionFichaBlanca(sender);
+            }
+        }
+
     }
 }
