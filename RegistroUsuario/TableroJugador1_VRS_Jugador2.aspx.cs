@@ -17,7 +17,7 @@ namespace RegistroUsuario
         private int estado1 = 0;
         private int estado2 = 1;
         System.Drawing.Image img;
-        
+
 
 
         Button seleccionado = null;
@@ -29,17 +29,18 @@ namespace RegistroUsuario
             if (!IsPostBack)
             {
                 txtJugador1.Text = "0";
-              
+
 
             }
         }
 
         //metodo para contar los movimentos de los jugadores
-        public  void contarMovimientosBlancos() {
-            
-            if(ViewState["juga1"] != null)
+        public void contarMovimientosBlancos()
+        {
+
+            if (ViewState["juga1"] != null)
             {
-                movimientoJugador2 = (int) ViewState["juga1"] + 1;
+                movimientoJugador2 = (int)ViewState["juga1"] + 1;
             }
             txtJugador2.Text = movimientoJugador2.ToString();
             ViewState["juga1"] = movimientoJugador2;
@@ -48,7 +49,7 @@ namespace RegistroUsuario
         protected void D4_Click(object sender, EventArgs e)
         {
             seleccionFichaBlanca(sender);
-            if(ViewState["click"] != null)
+            if (ViewState["click"] != null)
             {
                 movimientoJuador1 = (int)ViewState["click"] + 1;
             }
@@ -60,13 +61,13 @@ namespace RegistroUsuario
         //Metodo para seleccionar ficha color Blanco
         public void seleccionFichaBlanca(object objeto)
         {
-        
+
             Button ficha = (Button)objeto;
             seleccionado = ficha;
             ficha.Text = "\u26C0";
             seleccionado = ficha;
 
-          
+
 
         }
 
@@ -83,9 +84,9 @@ namespace RegistroUsuario
         protected void E4_Click(object sender, EventArgs e)
         {
             seleccionFichaNegra(sender);
-           contarMovimientosBlancos();
+            contarMovimientosBlancos();
 
-           
+
         }
 
         protected void D5_Click(object sender, EventArgs e)
@@ -103,13 +104,28 @@ namespace RegistroUsuario
 
         protected void turnoDeJuego(object sender, CommandEventArgs e)
         {
-            int contador1 = 1;   //  contador de jugador 1
-            int contador2 = 1;   //  contador de jugador 2
-            if(e.CommandName == "A1")
+            int fichaNegra = 1;   //  primer turno 1
+            int fichaBlanca = 0;   //  segundo turno 2
+
+            bool primero = true;  // esto es para definir quien va primero
+            bool segundo = false;  // esto para el segundo atirar
+
+            //******************************************************************************
+            if (e.CommandName == "C4" || e.CommandName == "D3")
             {
+
+                seleccionFichaNegra(sender);
+
+            }
+            //*******************************************************************************
+            if (e.CommandName == "C5" || e.CommandName == "D3")
+            {
+
                 seleccionFichaBlanca(sender);
+                D6.Text= "\u26C2";
+
+
             }
         }
-
     }
 }
