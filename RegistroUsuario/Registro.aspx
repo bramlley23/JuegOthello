@@ -33,18 +33,18 @@
             Contraseña&nbsp;
             <asp:TextBox ID="txtContraseña" runat="server" TextMode="Password" Width="122px"></asp:TextBox>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Pais&nbsp;
-            <asp:TextBox ID="TextBox1" runat="server" Width="127px"></asp:TextBox>
+            <asp:TextBox ID="txtPais" runat="server" Width="127px"></asp:TextBox>
             <br />
             <br />
 &nbsp;&nbsp;&nbsp; Fecha de&nbsp;
             <br />
 &nbsp;&nbsp;&nbsp; Nacimiento
-            <asp:TextBox ID="TextBox2" runat="server" Width="132px"></asp:TextBox>
+            <asp:TextBox ID="txtFechaNacimiento" runat="server" Width="132px" TextMode="Date"></asp:TextBox>
             <br />
             <br />
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnGuardar" runat="server" BackColor="#00CC00" BorderColor="White" BorderStyle="Solid" Font-Size="Medium" ForeColor="White" Height="38px" Text="Guardar" Width="131px" />
+            <asp:Button ID="btnGuardar" runat="server" BackColor="#00CC00" BorderColor="White" BorderStyle="Solid" Font-Size="Medium" ForeColor="White" Height="38px" Text="Guardar" Width="131px" OnClick="btnGuardar_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:Button ID="Button1" runat="server" BackColor="#00CC00" BorderColor="White" Font-Size="Medium" ForeColor="White" Height="38px" Text="Menu De Juegos" Width="144px" OnClick="Button1_Click" />
             <br />
