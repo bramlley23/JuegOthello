@@ -17,6 +17,7 @@ namespace RegistroUsuario
         private int estado1 = 0;
         private int estado2 = 1;
         System.Drawing.Image img;
+        int turno = 1;
 
 
 
@@ -46,9 +47,8 @@ namespace RegistroUsuario
             ViewState["juga1"] = movimientoJugador2;
         }
 
-        protected void D4_Click(object sender, EventArgs e)
+        public void contarMovimientosNegros()
         {
-            seleccionFichaBlanca(sender);
             if (ViewState["click"] != null)
             {
                 movimientoJuador1 = (int)ViewState["click"] + 1;
@@ -58,16 +58,17 @@ namespace RegistroUsuario
 
         }
 
+
+       
+
         //Metodo para seleccionar ficha color Blanco
         public void seleccionFichaBlanca(object objeto)
         {
 
             Button ficha = (Button)objeto;
             seleccionado = ficha;
-            ficha.Text = "\u26C0";
+            ficha.Text = "\u26C0";//COLOR BLANCO
             seleccionado = ficha;
-
-
 
         }
 
@@ -77,55 +78,155 @@ namespace RegistroUsuario
 
             Button ficha = (Button)objeto;
             seleccionado = ficha;
-            ficha.Text = "\u26C2";
+            ficha.Text = "\u26C2";//COLOR NEGRO
             seleccionado = ficha;
         }
-
-        protected void E4_Click(object sender, EventArgs e)
+        //método para mostrar el turno de cada jugador cambia de color los botones rojo y verde
+        public void turnoColorRojo()
         {
-            seleccionFichaNegra(sender);
-            contarMovimientosBlancos();
-
-
+            btnJugador1.BackColor = Color.Red;
+            btnJugador2.BackColor = Color.GreenYellow;
         }
 
-        protected void D5_Click(object sender, EventArgs e)
+        public void turnoColorVerde()
         {
-            seleccionFichaNegra(sender);
-        }
+            btnJugador1.BackColor = Color.GreenYellow;
+            btnJugador2.BackColor = Color.Red;
 
-        protected void E5_Click(object sender, EventArgs e)
-        {
-            seleccionFichaBlanca(sender);
         }
+   
         //***********************************************************
         //*********    Metodo para dar turnos de la fichas    *******
         //***********************************************************
 
         protected void turnoDeJuego(object sender, CommandEventArgs e)
         {
+            //e.CommandName == "C4" 
+
             int fichaNegra = 1;   //  primer turno 1
-            int fichaBlanca = 0;   //  segundo turno 2
+            int fichaBlanca = 1;   //  segundo turno 2
 
             bool primero = true;  // esto es para definir quien va primero
             bool segundo = false;  // esto para el segundo atirar
+            int i = 0;
+           
+            int contador = 1;
 
-            //******************************************************************************
-            if (e.CommandName == "C4" || e.CommandName == "D3")
+
+            int conteoBlanco = Convert.ToInt32(txtJugador1.Text);
+            int conteoNegro = Convert.ToInt32(txtJugador2.Text);
+           
+            //estos son las fichas que se pornen por defecto D4, E4, D5 y E5
+                if (e.CommandName == "D4" && conteoBlanco==0 )
+                {
+                    seleccionFichaBlanca(sender);
+                    contarMovimientosNegros();
+                    turnoColorRojo();
+                   
+                }
+                if (e.CommandName == "E4" && conteoNegro==0)
+                {
+                    seleccionFichaNegra(sender);
+                    contarMovimientosBlancos();
+                    turnoColorVerde();
+
+                }
+                if (e.CommandName == "D5" && conteoNegro==1 )
+                {
+                    seleccionFichaNegra(sender);
+                    contarMovimientosBlancos();
+                    turnoColorVerde();
+                }
+                if (e.CommandName == "E5" && conteoBlanco==1 )
+                {
+                    seleccionFichaBlanca(sender);
+                    contarMovimientosNegros();
+                    turnoColorRojo();
+                }
+            //******************* fin de fichas por defecto en tablero
+
+            //empieza el juego de insertar fichas se empieza por ficha negra y luego blanca
+            if (e.CommandName == "D3" && conteoNegro == 2)
             {
-
                 seleccionFichaNegra(sender);
-
+                contarMovimientosBlancos();
+                D4.Text = "\u26C2";
+                turnoColorVerde();
             }
-            //*******************************************************************************
-            if (e.CommandName == "C5" || e.CommandName == "D3")
+            if (e.CommandName == "E6" && conteoNegro == 2)
             {
-
-                seleccionFichaBlanca(sender);
-                D6.Text= "\u26C2";
-
-
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                E5.Text = "\u26C2";
+                turnoColorVerde();
             }
+            if (e.CommandName == "C5" && conteoBlanco == 2)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                D5.Text= "\u26C0";
+                turnoColorRojo();
+            }
+            if (e.CommandName == "E3" && conteoBlanco == 2)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                E4.Text = "\u26C0";
+                turnoColorRojo();
+            }
+            if (e.CommandName == "F5" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                E4.Text = "\u26C2";//COLOR NEGRO
+                E5.Text = "\u26C2";//COLOR NEGRO
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F3" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                E3.Text = "\u26C2";//COLOR NEGRO
+                E4.Text = "\u26C2";//COLOR NEGRO
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F4" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                E4.Text = "\u26C2";//COLOR NEGRO
+                turnoColorVerde();
+            }
+            if (e.CommandName == "E2" && conteoBlanco == 3)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                E3.Text = "\u26C0";//COLOR BLANCO
+                E4.Text = "\u26C0";//COLOR BLANCO
+                E5.Text = "\u26C0";//COLOR BLANCO
+                turnoColorRojo();
+            }
+            if (e.CommandName == "C3" && conteoBlanco == 3)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                D4.Text = "\u26C0";//COLOR BLANCO
+                E5.Text = "\u26C0";//COLOR BLANCO
+                turnoColorRojo();
+            }
+            if (e.CommandName == "C5" && conteoBlanco == 3)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                D5.Text = "\u26C0";//COLOR BLANCO
+                E5.Text = "\u26C0";//COLOR BLANCO
+                turnoColorRojo();
+            }
+
+
+
+
+
         }
     }
 }

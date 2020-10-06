@@ -93,9 +93,9 @@
                     </tD>
                     <td style="background-color: #FFFF00"></td>
                     <td style="background-color: #FFFF00">&nbsp;&nbsp;
-                        <asp:Button ID="btnJugador1" runat="server" BackColor="Lime" Font-Size="Medium" Text="Jugador 1" />
+                        <asp:Button ID="btnJugador1" runat="server" BackColor="Red" Font-Size="Medium" Text="Jugador 1" BorderColor="#0033CC" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnJugador2" runat="server" BackColor="Red" Font-Size="Medium" Text="Jugador 2" />
+                        <asp:Button ID="btnJugador2" runat="server" BackColor="Lime" Font-Size="Medium" Text="Jugador 2" BorderColor="#0033CC" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                     </tr>
 
@@ -194,10 +194,10 @@
                         <asp:Button ID="C4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C4" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
-                        <asp:Button ID="D4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" OnClick="D4_Click" CommandName="D4" Font-Size="Medium" OnCommand="turnoDeJuego" />
+                        <asp:Button ID="D4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D4" Font-Size="Medium" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
-                        <asp:Button ID="E4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" OnClick="E4_Click" CommandName="E4" OnCommand="turnoDeJuego" />
+                        <asp:Button ID="E4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E4" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
                         <asp:Button ID="F4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F4" OnCommand="turnoDeJuego" />
@@ -231,10 +231,10 @@
                         <asp:Button ID="C5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C5" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
-                        <asp:Button ID="D5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D5" OnClick="D5_Click" OnCommand="turnoDeJuego" />
+                        <asp:Button ID="D5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D5" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
-                        <asp:Button ID="E5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E5" OnClick="E5_Click" OnCommand="turnoDeJuego" />
+                        <asp:Button ID="E5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E5" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
                         <asp:Button ID="F5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F5" OnCommand="turnoDeJuego" />
