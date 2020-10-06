@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Drawing.Imaging;
 using System.Drawing;
+using System.Threading;
 
 namespace RegistroUsuario
 {
@@ -531,7 +532,7 @@ namespace RegistroUsuario
             }
             if (e.CommandName == "B8" && conteoBlanco == 18)
             {
-                seleccionFichaBlanca(sender); 
+                seleccionFichaBlanca(sender);
                 contarMovimientosNegros();
                 C7.Text = "\u26C0";//COLOR BLANCO
                 D6.Text = "\u26C0";//COLOR BLANCO
@@ -728,6 +729,349 @@ namespace RegistroUsuario
             }
 
             //****************************************************************************
+
         }
-     }
+
+        //==================================================================================
+        //========                Metodo para jugar contra la Maquina             ==========
+        //==================================================================================
+
+        protected void juegoContraMaquina(object sender, CommandEventArgs e)
+        {
+            //e.CommandName == "C4" 
+
+            int fichaNegra = 1;   //  primer turno 1
+            int fichaBlanca = 1;   //  segundo turno 2
+
+            bool primero = true;  // esto es para definir quien va primero
+            bool segundo = false;  // esto para el segundo atirar
+            int i = 0;
+
+            int contador = 1;
+
+
+            int conteoBlanco = Convert.ToInt32(txtJugador1.Text);
+            int conteoNegro = Convert.ToInt32(txtJugador2.Text);
+
+            //estos son las fichas que se pornen por defecto D4, E4, D5 y E5
+            if (e.CommandName == "D4" && conteoBlanco == 0)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                D4.ForeColor = Color.White;
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "E4" && conteoNegro == 0)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                E4.ForeColor = Color.Black;
+                turnoColorVerde();
+
+            }
+            if (e.CommandName == "D5" && conteoNegro == 1)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                D5.ForeColor = Color.Black;
+                turnoColorVerde();
+            }
+            if (e.CommandName == "E5" && conteoBlanco == 1)
+            {
+                seleccionFichaBlanca(sender);
+                contarMovimientosNegros();
+                E5.ForeColor = Color.White;
+                turnoColorRojo();
+            }
+            //**************************** fin de fichas por defecto
+
+            if (e.CommandName == "D3" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                D4.ForeColor = Color.Black;
+
+                E4.ForeColor = Color.White;
+                E3.Text = "\u26C0";//COLOR BLANCO
+                E3.ForeColor = Color.White;
+                turnoColorVerde();
+                turnoColorRojo();
+            }
+           
+            if (e.CommandName == "E6" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                E4.ForeColor = Color.Black;
+                E5.ForeColor = Color.Black;
+                E6.ForeColor = Color.Black;
+                D5.ForeColor = Color.White;
+                D4.ForeColor = Color.White;
+                D6.Text = "\u26C0";//COLOR BLANCO
+                D6.ForeColor = Color.White;
+                turnoColorVerde();
+                turnoColorRojo();
+            }
+        
+            if (e.CommandName == "C4" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                C4.ForeColor = Color.Black;
+                E4.ForeColor = Color.Black;
+                D4.ForeColor = Color.Black;
+                C3.Text = "\u26C0";//COLOR BLANCO
+                C3.ForeColor = Color.White;
+                D4.ForeColor = Color.White;
+                E5.ForeColor = Color.White;
+                turnoColorVerde();
+                turnoColorRojo();
+                
+            }
+            if (e.CommandName == "F5" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+                
+                E5.ForeColor = Color.Black;
+                F5.ForeColor = Color.Black;
+                F6.Text = "\u26C0";//COLOR BLANCO
+                F6.ForeColor = Color.White;
+                E5.ForeColor = Color.White;
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "D3" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                D4.ForeColor = Color.Black;
+                D3.ForeColor = Color.Black;
+                F4.Text = "\u26C0";//COLOR BLANCO
+                F4.ForeColor = Color.White;
+                F5.ForeColor = Color.White;
+                
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G4" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                G4.ForeColor = Color.Black;
+                F4.ForeColor = Color.Black;
+
+                H3.Text = "\u26C0";//COLOR BLANCO
+                H3.ForeColor = Color.White;
+                G4.ForeColor = Color.White;
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F7" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                F7.ForeColor = Color.Black;
+                F6.ForeColor = Color.Black;
+                F5.ForeColor = Color.Black;
+
+                C4.Text = "\u26C0";//COLOR BLANCO
+                C4.ForeColor = Color.White;
+                D4.ForeColor = Color.White;
+                E4.ForeColor = Color.White;
+                F4.ForeColor = Color.White;
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F3" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                F3.ForeColor = Color.Black;
+                F4.ForeColor = Color.Black;
+                E4.ForeColor = Color.Black;
+
+                D6.Text = "\u26C0";//COLOR BLANCO
+                D6.ForeColor = Color.White;
+                D5.ForeColor = Color.White;
+                E5.ForeColor = Color.White;
+                
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B4" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                B4.ForeColor = Color.Black;
+                C4.ForeColor = Color.Black;
+                D4.ForeColor = Color.Black;
+                E4.ForeColor = Color.Black;
+                F4.ForeColor = Color.Black;
+                
+
+                A4.Text = "\u26C0";//COLOR BLANCO
+                A4.ForeColor = Color.White;
+                B4.ForeColor = Color.White;
+                C4.ForeColor = Color.White;
+                D4.ForeColor = Color.White;
+                E4.ForeColor = Color.White;
+                F4.ForeColor = Color.White;
+
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "D7" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                D7.ForeColor = Color.Black;
+                D6.ForeColor = Color.Black;
+                D5.ForeColor = Color.Black;
+                D4.ForeColor = Color.Black;
+                D3.ForeColor = Color.Black;
+
+                F8.Text = "\u26C0";//COLOR BLANCO
+                F8.ForeColor = Color.White;
+                F7.ForeColor = Color.White;
+                F6.ForeColor = Color.White;
+                F5.ForeColor = Color.White;
+                F4.ForeColor = Color.White;
+                
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H4" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                H4.ForeColor = Color.Black;
+                G4.ForeColor = Color.Black;
+                F4.ForeColor = Color.Black;
+                E4.ForeColor = Color.Black;
+                
+
+                H5.Text = "\u26C0";//COLOR BLANCO
+                H5.ForeColor = Color.White;
+                H4.ForeColor = Color.White;
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G6" && conteoNegro == 10)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+ 
+                G6.ForeColor = Color.Black;
+                F5.ForeColor = Color.Black;
+
+                H6.Text = "\u26C0";//COLOR BLANCO
+                H6.ForeColor = Color.White;
+                G6.ForeColor = Color.White;
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G7" && conteoNegro == 11)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                G7.ForeColor = Color.Black;
+                E5.ForeColor = Color.Black;
+
+                E6.Text = "\u26C0";//COLOR BLANCO
+                E6.ForeColor = Color.White;
+                F5.ForeColor = Color.White;
+                G4.ForeColor = Color.White;
+                F6.ForeColor = Color.White;
+                G6.ForeColor = Color.White;
+                F7.ForeColor = Color.White;
+                F8.ForeColor = Color.White;
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H7" && conteoNegro == 12)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                G6.ForeColor = Color.Black;
+                F5.ForeColor = Color.Black;
+
+                H8.Text = "\u26C0";//COLOR BLANCO
+                H8.ForeColor = Color.White;
+                H7.ForeColor = Color.White;
+                G7.ForeColor = Color.White;
+                
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G8" && conteoNegro == 13)
+            {
+                seleccionFichaNegra(sender);
+                contarMovimientosBlancos();
+
+                G8.ForeColor = Color.Black;
+                G7.ForeColor = Color.Black;
+                G6.ForeColor = Color.Black;
+
+                D8.Text = "\u26C0";//COLOR BLANCO
+                D8.ForeColor = Color.White;
+                D7.ForeColor = Color.White;
+                D6.ForeColor = Color.White;
+                D5.ForeColor = Color.White;
+
+                turnoColorVerde();
+                turnoColorRojo();
+
+            }
+
+        }//fin de metodo juego contra matquina
+
+
+            //-----------------------------------------------------------------------------------
+            //--------------------   metodos para regresar al menu de juegos   ------------------
+            //-----------------------------------------------------------------------------------
+
+            //boton para volver al  menu de juegos
+            protected void Button12_Click(object sender, EventArgs e)
+            {
+
+                MenuDeJuegos volverAlMenu = new MenuDeJuegos();
+                Response.Redirect("MenuDeJuegos.aspx");
+            }
+
+            protected void Button12_Click1(object sender, EventArgs e)
+            {
+                MenuDeJuegos volverAlMenu = new MenuDeJuegos();
+                Response.Redirect("MenuDeJuegos.aspx");
+            }
+        
+    }
 }

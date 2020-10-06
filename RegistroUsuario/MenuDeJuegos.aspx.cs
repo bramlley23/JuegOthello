@@ -20,5 +20,11 @@ namespace RegistroUsuario
             Response.Redirect("TableroJugador1_VRS_Jugador2.aspx");
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            TableroContraMaquina tableroMaquina = new TableroContraMaquina();
+            Response.Redirect("TableroContraMaquina.aspx");
+        }
     }
 }

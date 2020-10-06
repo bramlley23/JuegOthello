@@ -52,7 +52,7 @@
                       <td style="background-color: #FFFF00">
                     </td>
                       <td style="background-color: #FFFF00" >
-                        <asp:Button ID="Button12" runat="server" BackColor="#FF9933" Height="40px" Text="Turnos" Width="248px" />
+                        <asp:Button ID="Button12" runat="server" BackColor="#FF9933" Height="40px" Text="Volver al Menu" Width="248px" OnClick="Button12_Click" />
                     </tD>
                    
                   
