@@ -7,6 +7,9 @@ using System.Web.UI.WebControls;
 using System.Drawing.Imaging;
 using System.Drawing;
 using System.Threading;
+using System.Xml.Linq;
+using System.Data;
+using System.Web.UI.HtmlControls;
 
 namespace RegistroUsuario
 {
@@ -19,11 +22,14 @@ namespace RegistroUsuario
         private int estado2 = 1;
         System.Drawing.Image img;
         int turno = 1;
-
+        string colorBanco = "blanco";
+        string colorNegro = "negro";
 
 
         Button seleccionado = null;
         private object blanco;
+
+       
 
         //metodo page_load
         protected void Page_Load(object sender, EventArgs e)
@@ -34,6 +40,7 @@ namespace RegistroUsuario
 
 
             }
+                     
         }
 
         //metodo para contar los movimentos de los jugadores
@@ -68,6 +75,7 @@ namespace RegistroUsuario
 
             Button ficha = (Button)objeto;
             seleccionado = ficha;
+         
             ficha.Text = "\u26C0";//COLOR BLANCO
             seleccionado = ficha;
 
@@ -122,20 +130,25 @@ namespace RegistroUsuario
             {
                 seleccionFichaBlanca(sender);
                 contarMovimientosNegros();
+                
                 turnoColorRojo();
-
+                parametro("blanco", "D", "4");
             }
+
             if (e.CommandName == "E4" && conteoNegro == 0)
             {
                 seleccionFichaNegra(sender);
                 contarMovimientosBlancos();
                 turnoColorVerde();
 
+                parametro("negro", "E", "4");
+
             }
             if (e.CommandName == "D5" && conteoNegro == 1)
             {
                 seleccionFichaNegra(sender);
                 contarMovimientosBlancos();
+
                 turnoColorVerde();
             }
             if (e.CommandName == "E5" && conteoBlanco == 1)
@@ -384,7 +397,7 @@ namespace RegistroUsuario
                 turnoColorVerde();
 
             }
-            if (e.CommandName == "G2" && conteoBlanco == 11)
+            if (e.CommandName == "G2" && conteoBlanco == 12)
             {
                 seleccionFichaBlanca(sender);
                 contarMovimientosNegros();
@@ -399,7 +412,7 @@ namespace RegistroUsuario
                 turnoColorVerde();
 
             }
-            if (e.CommandName == "A2" && conteoBlanco == 12)
+            if (e.CommandName == "A2" && conteoBlanco == 13)
             {
                 seleccionFichaBlanca(sender);
                 contarMovimientosNegros();
@@ -1384,6 +1397,39 @@ namespace RegistroUsuario
                 MenuDeJuegos volverAlMenu = new MenuDeJuegos();
                 Response.Redirect("MenuDeJuegos.aspx");
             }
+
+        //boton para guardar xml del partido jugador contra jugador
+
+        protected void Button102_Click(object sender, EventArgs e)
+        {
+           
+        }
+            public void parametro(string color, string columna, string fila)
+            {
+                    XDocument document = new XDocument(new XDeclaration("1.0", "utf-8", null));
+                    XElement nodoRaiz = new XElement("tablero");
+                    document.Add(nodoRaiz);
+                    XElement ficha = new XElement("ficha");
+
+
+        ficha.Add(new XElement("color", color));
+                ficha.Add(new XElement("columna", columna));
+                ficha.Add(new XElement("fila", fila));
+                nodoRaiz.Add(ficha);
+                document.Save(@"C:\Users\nefar\Desktop\BDSQLOthelo\juego.xml");
+            }
         
+     
+        //metodo para cargar juego del tablero jugador1 vrs jugador2
+        protected void Button103_Click(object sender, EventArgs e)
+        {
+
+            TableroJugador1_VRS_Jugador2 ir = new TableroJugador1_VRS_Jugador2();
+            DataSet ds = new DataSet();
+            ds.ReadXml(Server.MapPath(@"C:\Users\nefar\Desktop\BDSQLOthelo\juego.xml"));
+           
+
+        }
+     
     }
 }

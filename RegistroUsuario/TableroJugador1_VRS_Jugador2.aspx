@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
         <div class="auto-style4">
 
-            <table>
+            <table id="tablaJuego">
 
                 <!-- fila 0 -->  
                 <tr>
@@ -194,7 +194,7 @@
                         <asp:Button ID="C4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C4" OnCommand="turnoDeJuego" />
                     </tD>
                       <td>
-                        <asp:Button ID="D4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D4" Font-Size="Medium" OnCommand="turnoDeJuego" />
+                        <asp:Button ID="D4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D4" Font-Size="Medium" OnCommand="turnoDeJuego" ForeColor="Black" />
                     </tD>
                       <td>
                         <asp:Button ID="E4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E4" OnCommand="turnoDeJuego" />
@@ -405,9 +405,9 @@
             </table>
         </div>
         <br />
-&nbsp;<asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
+&nbsp;<asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" OnClick="Button102_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
+        <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" OnClick="Button103_Click" />
     </form>
 </body>
 </html>
