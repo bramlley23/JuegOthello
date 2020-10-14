@@ -65,28 +65,28 @@
                     </td>
 
                     <td>
-                        <asp:Button ID="A1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H1" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H1" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H1" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button21" runat="server" BackColor="#666666" Height="40px" Text="1" Width="40px" />
@@ -106,28 +106,28 @@
                         <asp:Button ID="Button22" runat="server" BackColor="#666666" Height="40px" Text="2" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H2" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H2" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H2" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button31" runat="server" BackColor="#666666" Height="40px" Text="2" Width="40px" />
@@ -143,28 +143,28 @@
                         <asp:Button ID="Button32" runat="server" BackColor="#666666" Height="40px" Text="3" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H3" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H3" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H3" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button41" runat="server" BackColor="#666666" Height="40px" Text="3" Width="40px" />
@@ -185,28 +185,28 @@
                         <asp:Button ID="Button42" runat="server" BackColor="#666666" Height="40px" Text="4" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A4" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A4" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B4" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B4" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C4" OnCommand="juegoContraMaquina"  />
+                        <asp:Button ID="C4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C4" OnCommand="juegoContraMaquina"  Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="D4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D4" Font-Size="Medium" OnCommand="juegoContraMaquina" ForeColor="Black" />
                     </tD>
                       <td>
-                        <asp:Button ID="E4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E4" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E4" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F4" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F4" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G4" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G4" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H4" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H4" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H4" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button51" runat="server" BackColor="#666666" Height="40px" Text="4" Width="40px" />
@@ -222,28 +222,28 @@
                         <asp:Button ID="Button52" runat="server" BackColor="#666666" Height="40px" Text="5" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H5" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H5" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H5" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button61" runat="server" BackColor="#666666" Height="40px" Text="5" Width="40px" />
@@ -266,28 +266,28 @@
                         <asp:Button ID="Button62" runat="server" BackColor="#666666" Height="40px" Text="6" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H6" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H6" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H6" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button71" runat="server" BackColor="#666666" Height="40px" Text="6" Width="40px" />
@@ -303,28 +303,28 @@
                         <asp:Button ID="Button72" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H7" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H7" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H7" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button81" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
@@ -338,28 +338,28 @@
                         <asp:Button ID="Button82" runat="server" BackColor="#666666" Height="40px" Text="8" Width="40px" />
                     </td>
                     <td>
-                        <asp:Button ID="A8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="A8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="A8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="B8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="B8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="B8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="C8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="C8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="C8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="D8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="D8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="D8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="E8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="E8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="E8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="F8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="F8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="F8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </td>
                       <td>
-                        <asp:Button ID="G8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="G8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="G8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
-                        <asp:Button ID="H8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H8" OnCommand="juegoContraMaquina" />
+                        <asp:Button ID="H8" runat="server" BackColor="#006600" Height="40px" Text="." Width="40px" CommandName="H8" OnCommand="juegoContraMaquina" Font-Size="Medium"/>
                     </tD>
                       <td>
                         <asp:Button ID="Button91" runat="server" BackColor="#666666" Height="40px" Text="8" Width="40px" />
