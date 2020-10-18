@@ -15,6 +15,7 @@ namespace RegistroUsuario
 {
     public partial class TableroJugador1_VRS_Jugador2 : System.Web.UI.Page
     {
+    
         private int movimientoJuador1 = 1;
         private int movimientoJugador2 = 1;
 
@@ -29,6 +30,7 @@ namespace RegistroUsuario
         Button seleccionado = null;
         private object blanco;
 
+        int duracion = 0;//para el cronometro
        
 
         //metodo page_load
@@ -88,6 +90,7 @@ namespace RegistroUsuario
             Button ficha = (Button)objeto;
             seleccionado = ficha;
             ficha.Text = "\u26C2";//COLOR NEGRO
+            
             seleccionado = ficha;
         }
         //método para mostrar el turno de cada jugador cambia de color los botones rojo y verde
@@ -130,9 +133,10 @@ namespace RegistroUsuario
             {
                 seleccionFichaBlanca(sender);
                 contarMovimientosNegros();
-                D4.ForeColor = Color.White;
+                D4.ForeColor = Color.Black;
          
                 turnoColorRojo();
+                
                 parametro("blanco", "D", "4");
             }
 
@@ -141,20 +145,23 @@ namespace RegistroUsuario
                 seleccionFichaNegra(sender);
                 contarMovimientosBlancos();
                 turnoColorVerde();
+               
 
                 parametro("negro", "E", "4");
 
             }
             if (e.CommandName == "D5" && conteoNegro == 1)
             {
-                seleccionFichaNegra(sender);
+                //seleccionFichaNegra(sender);
+                seleccionFichaBlanca(sender);
                 contarMovimientosBlancos();
-
+                
                 turnoColorVerde();
             }
             if (e.CommandName == "E5" && conteoBlanco == 1)
             {
-                seleccionFichaBlanca(sender);
+                //seleccionFichaBlanca(sender);
+                seleccionFichaNegra(sender);
                 contarMovimientosNegros();
                 E5.ForeColor = Color.White;
                 turnoColorRojo();
@@ -2118,6 +2125,74 @@ namespace RegistroUsuario
 
         protected void btnJugador1_Click(object sender, EventArgs e)
         {
+
+        }
+        //-----------------------------------------------------------------------------------
+        //--------------------   Tablero Xtreme Normal   ------------------
+        //-----------------------------------------------------------------------------------
+
+       //metodo para genera los colores alternativos
+
+        public void cronometroJugadorUno()
+        {
+          
+            int contador = 0;
+            
+                if (ViewState["click"] != null)
+                {
+                    contador = (int)ViewState["click"] + 1;
+                }
+                lblHora.Text = contador.ToString();
+                ViewState["click"] = contador;
+
+          
+        }
+
+        //metodo para utilizar el command name
+        protected void eventoExtremo(object sender, CommandEventArgs e)
+        {
+
+        }//fin metodo para controlar los cammand name (nombre de comando)
+
+        protected void btnBlanco_Click(object sender, EventArgs e)
+        {
+
+            // cronometroJugadorUno();
+           // timer1.Enabled = true;
+            int contador = 0;
+            int salida = 10;
+           
+            
+                if (ViewState["click"] != null)
+                {
+                    contador = (int)ViewState["click"] + 1;
+                }
+                txtReloj.Text = contador.ToString();
+             
+
+                ViewState["click"] = contador;
+               
+
+            
+           
+
+
+        }
+
+
+
+        protected void Timer1_Tick1(object sender, EventArgs e)
+        {
+
+            // txtReloj.Text = System.DateTime.Now.ToString("hh:mm:ss");
+
+            //Double total = Convert.ToDouble(lblHora.Text);
+            //total = total + 1;
+            //lblHora.Text = ToString();
+            //duracion++;
+            // txtReloj.Text = duracion.ToString();
+
+         
 
         }
     }
