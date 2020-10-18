@@ -370,7 +370,8 @@
                         <asp:Button ID="Button81" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
                     </tD>
                      <td></td>
-                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="lblHoras" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                         &nbsp;&nbsp;&nbsp;
                          <asp:Label ID="lblHora" runat="server" Font-Size="XX-Large" ForeColor="White" Text=" "></asp:Label>
                          <asp:Label ID="lblDosPuntos" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
 &nbsp;&nbsp;
@@ -472,6 +473,5 @@
 &nbsp;<asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
-        <asp:Label ID="lblCrono" runat="server" Text="00" BackColor="Yellow" BorderColor="#663300" BorderWidth="10px"></asp:Label>   
     </form>
 </body>

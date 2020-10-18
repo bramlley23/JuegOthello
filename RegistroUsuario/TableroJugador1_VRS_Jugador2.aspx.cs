@@ -2167,7 +2167,8 @@ namespace RegistroUsuario
                 {
                     contador = (int)ViewState["click"] + 1;
                 }
-                txtReloj.Text = contador.ToString();
+            lblHoras.Text = contador.ToString();
+               
              
 
                 ViewState["click"] = contador;
