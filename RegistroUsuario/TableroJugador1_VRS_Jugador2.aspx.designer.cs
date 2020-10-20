@@ -924,58 +924,76 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button81;
 
         /// <summary>
-        /// Control lblHoras.
+        /// Control txtMinutos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHoras;
+        protected global::System.Web.UI.WebControls.TextBox txtMinutos;
 
         /// <summary>
-        /// Control lblHora.
+        /// Control txtSegundos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblHora;
+        protected global::System.Web.UI.WebControls.TextBox txtSegundos;
 
         /// <summary>
-        /// Control lblDosPuntos.
+        /// Control txtMili.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDosPuntos;
+        protected global::System.Web.UI.WebControls.TextBox txtMili;
 
         /// <summary>
-        /// Control lblMinuto.
+        /// Control lblMinutos2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblMinuto;
+        protected global::System.Web.UI.WebControls.Label lblMinutos2;
 
         /// <summary>
-        /// Control lblDosPuntos2.
+        /// Control lblDosPuntos3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDosPuntos2;
+        protected global::System.Web.UI.WebControls.Label lblDosPuntos3;
 
         /// <summary>
-        /// Control lblSegundo.
+        /// Control lblSegundos2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSegundo;
+        protected global::System.Web.UI.WebControls.Label lblSegundos2;
+
+        /// <summary>
+        /// Control lblDosPuntos4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDosPuntos4;
+
+        /// <summary>
+        /// Control lblMiliSegundo2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMiliSegundo2;
 
         /// <summary>
         /// Control Button82.
@@ -1068,13 +1086,58 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button91;
 
         /// <summary>
-        /// Control timer1.
+        /// Control lblMinutos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.Timer timer1;
+        protected global::System.Web.UI.WebControls.Label lblMinutos;
+
+        /// <summary>
+        /// Control lblDosPuntos2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDosPuntos2;
+
+        /// <summary>
+        /// Control lblSegundos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSegundos;
+
+        /// <summary>
+        /// Control lblDosPuntos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblDosPuntos;
+
+        /// <summary>
+        /// Control lblMiliSegundo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblMiliSegundo;
+
+        /// <summary>
+        /// Control ScriptManager1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
 
         /// <summary>
         /// Control Button92.
@@ -1167,13 +1230,13 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button101;
 
         /// <summary>
-        /// Control ScriptManager1.
+        /// Control Timer1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.Timer Timer1;
 
         /// <summary>
         /// Control Button102.
@@ -1192,5 +1255,14 @@ namespace RegistroUsuario
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button103;
+
+        /// <summary>
+        /// Control Timer2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.Timer Timer2;
     }
 }

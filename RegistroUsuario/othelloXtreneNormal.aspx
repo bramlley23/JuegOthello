@@ -12,6 +12,9 @@
        .auto-style1 {
            width: 171px;
        }
+       .auto-style2 {
+           height: 40px;
+       }
     </style>
     </head>
 <body>
@@ -240,7 +243,7 @@
                      <td style="background-color: #996633"></td>
                      <td style="background-color: #996633">
                         <asp:Button ID="btnAmarillo" runat="server" BackColor="Yellow" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="Yellow"/>
-                        <asp:Button ID="btnVerde" runat="server" BackColor="#33CC33" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#33CC33"/>
+                        <asp:Button ID="btnVerde" runat="server" BackColor="#33CC33" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#33CC33" OnClick="btnVerde_Click"/>
                      </td>
                     </tr>
 
@@ -370,17 +373,22 @@
                         <asp:Button ID="Button81" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
                     </tD>
                      <td></td>
-                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="lblHoras" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
-                         &nbsp;&nbsp;&nbsp;
-                         <asp:Label ID="lblHora" runat="server" Font-Size="XX-Large" ForeColor="White" Text=" "></asp:Label>
-                         <asp:Label ID="lblDosPuntos" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
-&nbsp;&nbsp;
-                         <asp:Label ID="lblMinuto" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00 "></asp:Label>
-&nbsp;<asp:Label ID="lblDosPuntos2" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
-&nbsp;<asp:Label ID="lblSegundo" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00 "></asp:Label>
+                     <td><asp:TextBox ID="txtMinutos" runat="server" Width="46px"></asp:TextBox>
+                         <asp:TextBox ID="txtSegundos" runat="server" Width="44px"></asp:TextBox>
+                          <asp:TextBox ID="txtMili" runat="server" Width="49px"></asp:TextBox>
+                     &nbsp;
                      </td>
                      <td></td>
-                     <td></td>
+                     <td style="background-color: #000000">
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Label ID="lblMinutos2" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+&nbsp;
+                         <asp:Label ID="lblDosPuntos3" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+&nbsp;&nbsp;
+                         <asp:Label ID="lblSegundos2" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                         &nbsp;<asp:Label ID="lblDosPuntos4" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+&nbsp; <asp:Label ID="lblMiliSegundo2" runat="server" Font-Size="XX-Large" ForeColor="White" Text="0"></asp:Label>
+                    </td>
                     </tr>
 
 
@@ -417,61 +425,77 @@
                         <asp:Button ID="Button91" runat="server" BackColor="#666666" Height="40px" Text="8" Width="40px" />
                     </td>
                      <td></td>
+                     <td style="background-color: #000000">
+                        
+                         
+                         <asp:Label ID="lblMinutos" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                         <asp:Label ID="lblDosPuntos2" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+
+                         <asp:Label ID="lblSegundos" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                         <asp:Label ID="lblDosPuntos" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+                         <asp:Label ID="lblMiliSegundo" runat="server" Font-Size="XX-Large" ForeColor="White" Text="0"></asp:Label>
+                     </td>
+                     <td></td>
                      <td>
-                        
-                         <asp:Timer ID="timer1" runat="server" Interval="1000" Enabled="False">
-                         </asp:Timer>
-                        
+                         <asp:ScriptManager ID="ScriptManager1" runat="server">
+                         </asp:ScriptManager>
                      </td>
                     </tr>
 
 
                 <!-- fila 9 -->
                    <tr>
-                    <td>
+                    <td class="auto-style2">
                         <asp:Button ID="Button92" runat="server" BackColor="#666666" Height="40px" Text="." Width="40px" />
                     </td>
-                    <td>
+                    <td class="auto-style2">
                         <asp:Button ID="Button93" runat="server" BackColor="#666666" Height="40px" Text="A" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button94" runat="server" BackColor="#666666" Height="40px" Text="B" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button95" runat="server" BackColor="#666666" Height="40px" Text="C" Width="40px" />
                     </tD>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button96" runat="server" BackColor="#666666" Height="40px" Text="D" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button97" runat="server" BackColor="#666666" Height="40px" Text="E" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button98" runat="server" BackColor="#666666" Height="40px" Text="F" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button99" runat="server" BackColor="#666666" Height="40px" Text="G" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button100" runat="server" BackColor="#666666" Height="40px" Text="H" Width="40px" />
                     </td>
-                      <td>
+                      <td class="auto-style2">
                         <asp:Button ID="Button101" runat="server" BackColor="#666666" Height="40px" Text="." Width="40px" />
                     </td>
                                   
-                       <td></td>
-                       <td>
-                           <asp:ScriptManager ID="ScriptManager1" runat="server">
-                           </asp:ScriptManager>
-                       </td>
+                       <td class="auto-style2"></td>
+                       <td class="auto-style2">
+                          
+                           </td>
+                                  
+                       <td class="auto-style2"></td>
+                       <td class="auto-style2">
+                         <asp:Timer ID="Timer1" runat="server" Enabled="False" Interval="1000" OnTick="Timer1_Tick">
+                         </asp:Timer>
+                   </td>
                                   
                     </tr>
 
             </table>
         </div>
         <br />
-&nbsp;<asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
+
         <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Timer ID="Timer2" runat="server" Enabled="False" Interval="1000" OnTick="Timer2_Tick" />
     </form>
 </body>

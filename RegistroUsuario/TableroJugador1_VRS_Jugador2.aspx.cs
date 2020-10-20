@@ -10,11 +10,16 @@ using System.Threading;
 using System.Xml.Linq;
 using System.Data;
 using System.Web.UI.HtmlControls;
+using System.Diagnostics;
 
 namespace RegistroUsuario
 {
+    
     public partial class TableroJugador1_VRS_Jugador2 : System.Web.UI.Page
     {
+       
+        //clase para el cronometro
+        Stopwatch osW = new Stopwatch();
     
         private int movimientoJuador1 = 1;
         private int movimientoJugador2 = 1;
@@ -30,8 +35,16 @@ namespace RegistroUsuario
         Button seleccionado = null;
         private object blanco;
 
-        int duracion = 0;//para el cronometro
-       
+        //variables globales para uso del cronometro
+        int duracion = 0;//para el cronometro miliSegundos
+        int duracionSegunodos = 0; //para el cronometro segundos
+        int duracionMinutos = 0; // para el cronometro en  minutos
+
+        int duracion2 = 0;//para el cronometro miliSegundos
+        int duracionSegunodos2 = 0; //para el cronometro segundos
+        int duracionMinutos2 = 0; // para el cronometro en  minutos
+
+
 
         //metodo page_load
         protected void Page_Load(object sender, EventArgs e)
@@ -2128,73 +2141,109 @@ namespace RegistroUsuario
 
         }
         //-----------------------------------------------------------------------------------
-        //--------------------   Tablero Xtreme Normal   ------------------
+        //--------------------   Tablero Xtreme Inverso   ------------------
         //-----------------------------------------------------------------------------------
 
        //metodo para genera los colores alternativos
 
         public void cronometroJugadorUno()
         {
-          
-            int contador = 0;
-            
-                if (ViewState["click"] != null)
-                {
-                    contador = (int)ViewState["click"] + 1;
-                }
-                lblHora.Text = contador.ToString();
-                ViewState["click"] = contador;
-
-          
+               
         }
-
+        //*********************************************************************************
+        //*********************************************************************************
         //metodo para utilizar el command name
         protected void eventoExtremo(object sender, CommandEventArgs e)
         {
 
-        }//fin metodo para controlar los cammand name (nombre de comando)
-
+        }
+        //fin metodo para controlar los cammand name (nombre de comando)
+        //**********************************************************************************
+        //**********************************************************************************
         protected void btnBlanco_Click(object sender, EventArgs e)
         {
+            osW.Start();
+            Timer1.Enabled = true;
+            Timer2.Enabled = false;
 
-            // cronometroJugadorUno();
-           // timer1.Enabled = true;
-            int contador = 0;
-            int salida = 10;
-           
+        }
+        //metodo para el cronometro uno 
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            TimeSpan tsi = new TimeSpan(0, 0, 0, 0, (int)osW.ElapsedMilliseconds);
+            txtMinutos.Text = tsi.Minutes.ToString().Length<2 ? "0"+ tsi.Minutes.ToString() : tsi.Minutes.ToString();
+            txtSegundos.Text = tsi.Seconds.ToString().Length<2 ? "0"+ tsi.Seconds.ToString() : tsi.Seconds.ToString();
+            txtMili.Text = tsi.Milliseconds.ToString();
             
-                if (ViewState["click"] != null)
-                {
-                    contador = (int)ViewState["click"] + 1;
-                }
-            lblHoras.Text = contador.ToString();
-               
+            //cronometro uno
+            duracion++;
+            duracionSegunodos++;
+            duracionMinutos++;
+            duracion = Convert.ToInt32(lblMiliSegundo.Text)+1;
+            lblMiliSegundo.Text = duracion.ToString();
+
+            if (duracion == 60)
+            {
+                duracion = 0;
+                duracion = Convert.ToInt32(lblMiliSegundo.Text) -60;
+                lblMiliSegundo.Text = duracion.ToString();
+
+                duracionSegunodos = Convert.ToInt32(lblSegundos.Text) + 1;
+                lblSegundos.Text = duracionSegunodos.ToString();
+                   
+            }
+            if (duracionSegunodos == 60)
+            {
+                duracionSegunodos = 0;
+                duracionSegunodos = Convert.ToInt32(lblSegundos.Text) -60;
+                lblSegundos.Text = duracionSegunodos.ToString();
+
+                duracionMinutos = Convert.ToInt32(lblMinutos.Text) + 1;
+                lblMinutos.Text = duracionMinutos.ToString();
+
+            }
              
+        }//fin metodo Timer1_Tick
 
-                ViewState["click"] = contador;
-               
 
-            
-           
-
+        protected void btnVerde_Click(object sender, EventArgs e)
+        {
+            osW.Stop();
+            Timer1.Enabled = false;
+            Timer2.Enabled = true;
 
         }
 
-
-
-        protected void Timer1_Tick1(object sender, EventArgs e)
+        protected void Timer2_Tick(object sender, EventArgs e)
         {
+            //cronometro dos
+            duracion2++;
+            duracionSegunodos2++;
+            duracionMinutos2++;
+            duracion2 = Convert.ToInt32(lblMiliSegundo2.Text) + 1;
+            lblMiliSegundo2.Text = duracion2.ToString();
 
-            // txtReloj.Text = System.DateTime.Now.ToString("hh:mm:ss");
+            if (duracion2 == 60)
+            {
+                duracion2 = 0;
+                duracion2 = Convert.ToInt32(lblMiliSegundo2.Text) - 60;
+                lblMiliSegundo2.Text = duracion2.ToString();
 
-            //Double total = Convert.ToDouble(lblHora.Text);
-            //total = total + 1;
-            //lblHora.Text = ToString();
-            //duracion++;
-            // txtReloj.Text = duracion.ToString();
+                duracionSegunodos2 = Convert.ToInt32(lblSegundos2.Text) + 1;
+                lblSegundos2.Text = duracionSegunodos2.ToString();
 
-         
 
+            }
+            if (duracionSegunodos2 == 60)
+            {
+                duracionSegunodos2 = 0;
+                duracionSegunodos2 = Convert.ToInt32(lblSegundos2.Text) - 60;
+                lblSegundos2.Text = duracionSegunodos2.ToString();
+
+                duracionMinutos2 = Convert.ToInt32(lblMinutos2.Text) + 1;
+                lblMinutos2.Text = duracionMinutos2.ToString();
+
+            }
         }
     }
 }
