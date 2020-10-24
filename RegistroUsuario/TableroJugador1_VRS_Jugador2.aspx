@@ -293,7 +293,9 @@
                         <asp:Button ID="Button71" runat="server" BackColor="#666666" Height="40px" Text="6" Width="40px" />
                     </tD>
                      <td style="background-color: #FFFF00"></td>
-                     <td style="background-color: #FFFF00">&nbsp;</td>
+                     <td style="background-color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Label ID="Label1" runat="server" Font-Size="XX-Large" ForeColor="White" Text="Tiempo Jugador 1"></asp:Label>
+                     </td>
                     </tr>
 
 
@@ -329,6 +331,18 @@
                       <td>
                         <asp:Button ID="Button81" runat="server" BackColor="#666666" Height="40px" Text="7" Width="40px" />
                     </tD>
+                     <td></td>
+                     <td style="background-color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Label ID="lblMinutos5" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+&nbsp;
+                         <asp:Label ID="Label2" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+&nbsp;
+                         <asp:Label ID="lblSegundos5" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+&nbsp;
+                         <asp:Label ID="Label3" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+&nbsp;
+                         <asp:Label ID="lblMiliSegundos5" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                     </td>
                     </tr>
 
 
@@ -364,6 +378,10 @@
                       <td>
                         <asp:Button ID="Button91" runat="server" BackColor="#666666" Height="40px" Text="8" Width="40px" />
                     </td>
+                     <td></td>
+                     <td style="background-color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Label ID="Label4" runat="server" Font-Size="XX-Large" ForeColor="White" Text="Tiempo Jugador 2"></asp:Label>
+                         &nbsp;</td>
                     </tr>
 
 
@@ -399,6 +417,19 @@
                       <td>
                         <asp:Button ID="Button101" runat="server" BackColor="#666666" Height="40px" Text="." Width="40px" />
                     </td>
+                                  
+                       <td></td>
+                       <td style="background-color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                           <asp:Label ID="lblMinutos6" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                           &nbsp;
+                           <asp:Label ID="Label5" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+&nbsp;
+                           <asp:Label ID="lblSegundos6" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+&nbsp;
+                           <asp:Label ID="Label6" runat="server" Font-Size="XX-Large" ForeColor="White" Text=":"></asp:Label>
+&nbsp;
+                           <asp:Label ID="lblMiliSegundos6" runat="server" Font-Size="XX-Large" ForeColor="White" Text="00"></asp:Label>
+                       </td>
                                   
                     </tr>
 

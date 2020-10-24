@@ -51,10 +51,12 @@
                     </td>
                       <td style="background-color: #FFFF00">
                     </td>
-                      <td style="background-color: #FFFF00" >
-                        <asp:Button ID="Button12" runat="server" BackColor="#6600FF" Height="40px" Text="Volver al Menu" Width="248px" BorderColor="#FF0066" Font-Size="Large" ForeColor="White" OnClick="Button12_Click1" />
-                    </tD>
-                   
+                        
+                  
+                    <td style="background-color: #FFFF00">
+                        <asp:Button ID="btnContraMaquina" runat="server" BackColor="#6666FF" Font-Size="Medium" ForeColor="White" Height="40px" Text="Volver Al Menu" Width="266px" />
+                    </td>
+                        
                   
                 </tr>
 

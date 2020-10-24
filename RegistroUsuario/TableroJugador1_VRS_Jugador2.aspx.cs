@@ -2096,11 +2096,6 @@ namespace RegistroUsuario
                 Response.Redirect("MenuDeJuegos.aspx");
             }
 
-            protected void Button12_Click1(object sender, EventArgs e)
-            {
-                MenuDeJuegos volverAlMenu = new MenuDeJuegos();
-                Response.Redirect("MenuDeJuegos.aspx");
-            }
 
         //boton para guardar xml del partido jugador contra jugador
 
@@ -2165,15 +2160,16 @@ namespace RegistroUsuario
             osW.Start();
             Timer1.Enabled = true;
             Timer2.Enabled = false;
+            
 
         }
         //metodo para el cronometro uno 
         protected void Timer1_Tick(object sender, EventArgs e)
         {
             TimeSpan tsi = new TimeSpan(0, 0, 0, 0, (int)osW.ElapsedMilliseconds);
-            txtMinutos.Text = tsi.Minutes.ToString().Length<2 ? "0"+ tsi.Minutes.ToString() : tsi.Minutes.ToString();
-            txtSegundos.Text = tsi.Seconds.ToString().Length<2 ? "0"+ tsi.Seconds.ToString() : tsi.Seconds.ToString();
-            txtMili.Text = tsi.Milliseconds.ToString();
+            //txtMinutos.Text = tsi.Minutes.ToString().Length<2 ? "0"+ tsi.Minutes.ToString() : tsi.Minutes.ToString();
+            //txtSegundos.Text = tsi.Seconds.ToString().Length<2 ? "0"+ tsi.Seconds.ToString() : tsi.Seconds.ToString();
+            //txtMili.Text = tsi.Milliseconds.ToString();
             
             //cronometro uno
             duracion++;
@@ -2211,15 +2207,16 @@ namespace RegistroUsuario
             osW.Stop();
             Timer1.Enabled = false;
             Timer2.Enabled = true;
+           
 
         }
 
         protected void Timer2_Tick(object sender, EventArgs e)
         {
-            //cronometro dos
             duracion2++;
             duracionSegunodos2++;
             duracionMinutos2++;
+
             duracion2 = Convert.ToInt32(lblMiliSegundo2.Text) + 1;
             lblMiliSegundo2.Text = duracion2.ToString();
 
@@ -2232,17 +2229,15 @@ namespace RegistroUsuario
                 duracionSegunodos2 = Convert.ToInt32(lblSegundos2.Text) + 1;
                 lblSegundos2.Text = duracionSegunodos2.ToString();
 
-
             }
             if (duracionSegunodos2 == 60)
             {
                 duracionSegunodos2 = 0;
-                duracionSegunodos2 = Convert.ToInt32(lblSegundos2.Text) - 60;
+                duracionSegunodos2 = Convert.ToInt32(lblSegundos2.Text) -60;
                 lblSegundos2.Text = duracionSegunodos2.ToString();
 
                 duracionMinutos2 = Convert.ToInt32(lblMinutos2.Text) + 1;
                 lblMinutos2.Text = duracionMinutos2.ToString();
-
             }
         }
     }

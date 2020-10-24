@@ -114,22 +114,22 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button10;
 
         /// <summary>
-        /// Control Button12.
+        /// Control btnBotonInversoXtreme.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button12;
+        protected global::System.Web.UI.WebControls.Button btnBotonInversoXtreme;
 
         /// <summary>
-        /// Control Button104.
+        /// Control btnSinUso.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button104;
+        protected global::System.Web.UI.WebControls.Button btnSinUso;
 
         /// <summary>
         /// Control Button11.
@@ -816,15 +816,6 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button71;
 
         /// <summary>
-        /// Control Label1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-
-        /// <summary>
         /// Control Label2.
         /// </summary>
         /// <remarks>
@@ -924,31 +915,13 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button81;
 
         /// <summary>
-        /// Control txtMinutos.
+        /// Control Label3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMinutos;
-
-        /// <summary>
-        /// Control txtSegundos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSegundos;
-
-        /// <summary>
-        /// Control txtMili.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMili;
+        protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
         /// Control lblMinutos2.
@@ -1230,6 +1203,15 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Button Button101;
 
         /// <summary>
+        /// Control Timer2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.Timer Timer2;
+
+        /// <summary>
         /// Control Timer1.
         /// </summary>
         /// <remarks>
@@ -1255,14 +1237,5 @@ namespace RegistroUsuario
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button103;
-
-        /// <summary>
-        /// Control Timer2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.Timer Timer2;
     }
 }
