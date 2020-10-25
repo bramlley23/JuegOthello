@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
    <style >        body {
-            background-color:aquamarine;
+            background-color:black;
         }
        .auto-style2 {
            height: 40px;
@@ -59,7 +59,7 @@
                          </tD>
                    
                   
-                    <td style="background-color: #996633"></td>
+                    <td style="background-color: #000000"></td>
                                 
                   
                     <td style="background-color: #FFFF00">
@@ -72,7 +72,7 @@
                 <!-- fila 1 -->
                 <tr>
                     <td>
-                        <asp:Button ID="Button11" runat="server" BackColor="#666666" Height="40px" Text="1" Width="40px" />
+                        <asp:Button ID="FF1" runat="server" BackColor="#666666" Height="40px" Text="1" Width="40px" />
                     </td>
 
                     <td>
@@ -104,12 +104,12 @@
                     </tD>
                     <td style="background-color: #FFFF00"></td>
                     <td style="background-color: #FFFF00">&nbsp;&nbsp;
-                        <asp:Button ID="btnJugador1" runat="server" BackColor="Red" Font-Size="Medium" Text="Jugador 1" BorderColor="#0033CC" />
+                        <asp:Button ID="btnJugador1" runat="server" BackColor="Lime" Font-Size="Medium" Text="Jugador 1" BorderColor="#0033CC" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnJugador2" runat="server" BackColor="Lime" Font-Size="Medium" Text="Jugador 2" BorderColor="#0033CC" />
+                        <asp:Button ID="btnJugador2" runat="server" BackColor="Red" Font-Size="Medium" Text="Jugador 2" BorderColor="#0033CC" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                    <td style="background-color: #996633"></td>
-                    <td style="background-color: #996633">
+                    <td style="background-color: #000000"></td>
+                    <td style="background-color: #000000">
                         <asp:Button ID="btnVioleta" runat="server" BackColor="#6600FF" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#6600FF"/>
                         <asp:Button ID="btnNaranja" runat="server" BackColor="#FF9900" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#FF9900"/>
                     </td>
@@ -150,8 +150,8 @@
                     </tD>
                      <td style="background-color: #FFFF00"></td>
                      <td style="background-color: #FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Movimiento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Movimiento</td>
-                     <td style="background-color: #996633"></td>
-                     <td style="background-color: #996633">
+                     <td style="background-color: #000000"></td>
+                     <td style="background-color: #000000">
                         <asp:Button ID="btnAzul" runat="server" BackColor="Blue" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="Blue"/>
                         <asp:Button ID="btnGris" runat="server" BackColor="#666666" Height="40px" Text="." Width="117px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#666666"/>
                      </td>
@@ -197,8 +197,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                          <asp:TextBox ID="txtJugador2" runat="server" Width="61px">0</asp:TextBox>
                      </td>
-                     <td style="background-color: #996633"></td>
-                     <td style="background-color: #996633">
+                     <td style="background-color: #000000"></td>
+                     <td style="background-color: #000000">
                         <asp:Button ID="btnNegro" runat="server" BackColor="Black" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="Black"/>
                         <asp:Button ID="btnBlanco" runat="server" BackColor="White" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="White" OnClick="btnBlanco_Click"/>
                      </td>
@@ -239,8 +239,8 @@
                     </tD>
                      <td style="background-color: #FFFF00"></td>
                      <td style="background-color: #FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ficha Blanca&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fichas Negra</td>
-                     <td style="background-color: #996633"></td>
-                     <td style="background-color: #996633">
+                     <td style="background-color: #000000"></td>
+                     <td style="background-color: #000000">
                         <asp:Button ID="btnAmarillo" runat="server" BackColor="Yellow" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="Yellow"/>
                         <asp:Button ID="btnVerde" runat="server" BackColor="#33CC33" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#33CC33" OnClick="btnVerde_Click"/>
                      </td>
@@ -288,8 +288,8 @@
 
                          <asp:TextBox ID="txtFicha2" runat="server" Width="61px">0</asp:TextBox>
                      </td>
-                     <td style="background-color: #996633"></td>
-                     <td style="background-color: #996633">
+                     <td style="background-color: #000000"></td>
+                     <td style="background-color: #000000">
                         <asp:Button ID="btnRojo" runat="server" BackColor="Red" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="Red"/>
                         <asp:Button ID="btnCeleste" runat="server" BackColor="#33CCFF" Height="40px" Text="." Width="118px" CommandName="G2" OnCommand="eventoExtremo" Font-Size="Medium" BorderColor="White" ForeColor="#33CCFF"/>
                      </td>
@@ -331,7 +331,7 @@
                      <td style="background-color: #FFFF00"></td>
                      <td style="background-color: #FFFF00">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                          </td>
-                     <td style="background-color: #996633"></td>
+                     <td style="background-color: #000000"></td>
                      <td style="background-color: #000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                          <asp:Label ID="Label2" runat="server" Font-Size="X-Large" ForeColor="White" Text="Tiempo Jugador 2"></asp:Label>
                          &nbsp;</td>

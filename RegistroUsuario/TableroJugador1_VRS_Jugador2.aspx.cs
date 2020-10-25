@@ -109,14 +109,14 @@ namespace RegistroUsuario
         //método para mostrar el turno de cada jugador cambia de color los botones rojo y verde
         public void turnoColorRojo()
         {
-            btnJugador1.BackColor = Color.Red;
-            btnJugador2.BackColor = Color.GreenYellow;
+            btnJugador1.BackColor = Color.GreenYellow;
+            btnJugador2.BackColor = Color.Red;
         }
 
         public void turnoColorVerde()
         {
-            btnJugador1.BackColor = Color.GreenYellow;
-            btnJugador2.BackColor = Color.Red;
+            btnJugador1.BackColor = Color.Red;
+            btnJugador2.BackColor = Color.GreenYellow;
 
         }
 
@@ -2139,17 +2139,259 @@ namespace RegistroUsuario
         //--------------------   Tablero Xtreme Inverso   ------------------
         //-----------------------------------------------------------------------------------
 
-       //metodo para genera los colores alternativos
 
-        public void cronometroJugadorUno()
+       //metodo para el cronometro del jugador 1
+        public void cronometro1()
         {
-               
+            Timer1.Enabled = true;
+            Timer2.Enabled = false;
+        }
+        //cronometro 2 para el jugador 2
+        public void cronometro2()
+        {
+            osW.Start();
+            Timer2.Enabled = true;
+            Timer1.Enabled = false;
         }
         //*********************************************************************************
         //*********************************************************************************
         //metodo para utilizar el command name
         protected void eventoExtremo(object sender, CommandEventArgs e)
         {
+            int conteoBlanco = Convert.ToInt32(txtJugador1.Text);
+            int conteoNegro = Convert.ToInt32(txtJugador2.Text);
+
+            if (e.CommandName == "D4" && conteoBlanco==0)
+            {
+                seleccionFichaNegra(sender);
+                D4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+
+            }   
+            
+            if (e.CommandName == "E4" && conteoNegro==0)
+            {
+                seleccionFichaNegra(sender);
+                E4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+                
+            }
+            if (e.CommandName == "D5" && conteoBlanco == 2 && conteoNegro==1)
+            {
+                seleccionFichaNegra(sender);
+                D5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+            }
+            if (e.CommandName == "E5" && conteoBlanco==1)
+            {
+                seleccionFichaNegra(sender);
+                E5.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //****************************************************************
+            //movimientos con el contador == 2 ficha blanca
+            if (e.CommandName == "D3" && conteoBlanco == 2)
+            {
+                seleccionFichaNegra(sender);
+                D3.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+                            }
+            if (e.CommandName == "C4" && conteoBlanco == 2)
+            {
+                seleccionFichaNegra(sender);
+                C4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "E6" && conteoBlanco == 2)
+            {
+                seleccionFichaNegra(sender);
+                E6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F5" && conteoBlanco == 2)
+            {
+                seleccionFichaNegra(sender);
+                F5.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**********************************************************
+            //movimiento con el contador == 2 ficha negra
+            if (e.CommandName == "E3" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                E3.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C5" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                C5.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "D6" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                D6.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F4" && conteoNegro == 2)
+            {
+                seleccionFichaNegra(sender);
+                F4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //movimiento con el contador == 3 ficha roja(blanca)
+            if (e.CommandName == "D3" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                D3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "C3" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                C3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F5" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                F5.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F3" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                F3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //*****************************************************************
+            //CONTEO MOVIEMIENTOS CONTADOR == 3 FICHA NEGRA(VERDE)
+            if (e.CommandName == "B5" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B6" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C6" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                C6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "D6" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                D6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F6" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F5" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                F5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F4" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                F4.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F3" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                F3.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+
 
         }
         //fin metodo para controlar los cammand name (nombre de comando)
@@ -2157,10 +2399,9 @@ namespace RegistroUsuario
         //**********************************************************************************
         protected void btnBlanco_Click(object sender, EventArgs e)
         {
-            osW.Start();
-            Timer1.Enabled = true;
-            Timer2.Enabled = false;
-            
+
+
+           
 
         }
         //metodo para el cronometro uno 
@@ -2201,12 +2442,10 @@ namespace RegistroUsuario
              
         }//fin metodo Timer1_Tick
 
-
+      
         protected void btnVerde_Click(object sender, EventArgs e)
         {
-            osW.Stop();
-            Timer1.Enabled = false;
-            Timer2.Enabled = true;
+        
            
 
         }
