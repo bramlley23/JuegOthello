@@ -26,5 +26,10 @@ namespace RegistroUsuario
             TableroContraMaquina tableroMaquina = new TableroContraMaquina();
             Response.Redirect("TableroContraMaquina.aspx");
         }
+
+        protected void btnCampeonato_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

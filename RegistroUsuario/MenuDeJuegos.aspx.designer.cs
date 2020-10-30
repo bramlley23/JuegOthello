@@ -60,12 +60,21 @@ namespace RegistroUsuario
         protected global::System.Web.UI.WebControls.Label Label1;
 
         /// <summary>
-        /// Control btnInverso.
+        /// Control btnInverso0.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnInverso;
+        protected global::System.Web.UI.WebControls.Button btnInverso0;
+
+        /// <summary>
+        /// Control btnCampeonato.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnCampeonato;
     }
 }

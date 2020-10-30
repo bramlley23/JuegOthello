@@ -2317,6 +2317,38 @@ namespace RegistroUsuario
                 contarMovimientosNegros();
                 turnoColorVerde();
             }
+            if (e.CommandName == "C4" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                C4.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "C6" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                C6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "E6" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                E6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G5" && conteoBlanco == 3)
+            {
+                seleccionFichaNegra(sender);
+                G5.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
             //*****************************************************************
             //CONTEO MOVIEMIENTOS CONTADOR == 3 FICHA NEGRA(VERDE)
             if (e.CommandName == "B5" && conteoNegro == 3)
@@ -2337,15 +2369,7 @@ namespace RegistroUsuario
                 turnoColorRojo();
 
             }
-            if (e.CommandName == "C6" && conteoNegro == 3)
-            {
-                seleccionFichaNegra(sender);
-                C6.ForeColor = Color.Black;
-                cronometro1();
-                contarMovimientosBlancos();
-                turnoColorRojo();
-
-            }
+           
             if (e.CommandName == "D6" && conteoNegro == 3)
             {
                 seleccionFichaNegra(sender);
@@ -2355,24 +2379,8 @@ namespace RegistroUsuario
                 turnoColorRojo();
 
             }
-            if (e.CommandName == "F6" && conteoNegro == 3)
-            {
-                seleccionFichaNegra(sender);
-                F6.ForeColor = Color.Black;
-                cronometro1();
-                contarMovimientosBlancos();
-                turnoColorRojo();
-
-            }
-            if (e.CommandName == "F5" && conteoNegro == 3)
-            {
-                seleccionFichaNegra(sender);
-                F5.ForeColor = Color.Black;
-                cronometro1();
-                contarMovimientosBlancos();
-                turnoColorRojo();
-
-            }
+         
+           
             if (e.CommandName == "F4" && conteoNegro == 3)
             {
                 seleccionFichaNegra(sender);
@@ -2382,7 +2390,285 @@ namespace RegistroUsuario
                 turnoColorRojo();
 
             }
-            if (e.CommandName == "F3" && conteoNegro == 3)
+          
+           
+            if (e.CommandName == "C5" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                C5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+           
+            if (e.CommandName == "G6" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G4" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                G4.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G3" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                G3.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "E3" && conteoNegro == 3)
+            {
+                seleccionFichaNegra(sender);
+                E3.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //************************************************************
+            //movimientos con contador == 4 fichas blancas
+            if (e.CommandName == "C3" && conteoBlanco == 4)
+            {
+                seleccionFichaNegra(sender);
+                C3.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B3" && conteoBlanco == 4)
+            {
+                seleccionFichaNegra(sender);
+                B3.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 4)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 4)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G6" && conteoBlanco == 4)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G5" && conteoBlanco == 4)
+            {
+                seleccionFichaNegra(sender);
+                G5.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //********************************************************
+            //movimientos con contaodor == 4 ficha color negra
+            if (e.CommandName == "B2" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B5" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B6" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C6" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                C6.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G4" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                G4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G3" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                G3.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F3" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                F3.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F4" && conteoNegro == 4)
+            {
+                seleccionFichaNegra(sender);
+                F4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //************************************************************
+            //movimientos con contador == 5 fichas blancas(roja)
+            if (e.CommandName == "C3" && conteoBlanco == 5)
+            {
+                seleccionFichaNegra(sender);
+                C3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B3" && conteoBlanco == 5)
+            {
+                seleccionFichaNegra(sender);
+                B3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 5)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 5)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G6" && conteoBlanco == 5)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G5" && conteoBlanco == 5)
+            {
+                seleccionFichaNegra(sender);
+                G5.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**************************************************
+            //movimiento con contador == 5 ficha negra
+            if (e.CommandName == "B2" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B5" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B6" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C6" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                C6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G4" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                G4.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G3" && conteoNegro == 5)
+            {
+                seleccionFichaNegra(sender);
+                G3.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F3" && conteoNegro == 5)
             {
                 seleccionFichaNegra(sender);
                 F3.ForeColor = Color.Black;
@@ -2391,6 +2677,720 @@ namespace RegistroUsuario
                 turnoColorRojo();
 
             }
+            //************************************************************
+            //movimientos con contador == 6 fichas blancas
+            if (e.CommandName == "B2" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A2" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                A2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A3" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                A3.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A4" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                A4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G5" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                G5.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "C3" && conteoBlanco == 6)
+            {
+                seleccionFichaNegra(sender);
+                C3.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**************************************************
+            //movimiento con contador == 6 ficha negra(VERDE)
+            if (e.CommandName == "B5" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B6" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C6" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                C6.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G6" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G4" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                G4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G3" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                G3.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G2" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                G2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F2" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                F2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "E2" && conteoNegro == 6)
+            {
+                seleccionFichaNegra(sender);
+                E2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //************************************************************
+            //movimientos con contador == 7 fichas blancas(rojo)
+            if (e.CommandName == "C2" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                C2.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B2" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A3" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                A3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A4" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                A4.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G6" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G5" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                G5.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G2" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                G2.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "H3" && conteoBlanco == 7)
+            {
+                seleccionFichaNegra(sender);
+                H3.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**************************************************
+            //movimiento con contador == 7 ficha negra
+            if (e.CommandName == "B5" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B6" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C6" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                C6.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F2" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                F2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H2" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                H2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H4" && conteoNegro == 7)
+            {
+                seleccionFichaNegra(sender);
+                H4.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //************************************************************
+            //movimientos con contador == 8 fichas blancas
+            if (e.CommandName == "C2" && conteoBlanco == 8)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A3" && conteoBlanco == 8)
+            {
+                seleccionFichaNegra(sender);
+                A3.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 8)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B6" && conteoBlanco == 8)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 8)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G2" && conteoBlanco == 8)
+            {
+                seleccionFichaNegra(sender);
+                G2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**************************************************
+            //movimiento con contador == 8 ficha negra(VERDE)
+            if (e.CommandName == "D2" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                D2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "A4" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                A4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "B5" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C7" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                C7.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G4" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                G4.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H3" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                H3.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H2" && conteoNegro == 8)
+            {
+                seleccionFichaNegra(sender);
+                H2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F2" && conteoNegro == 8)
+            {
+                seleccionFichaNegra
+                    (sender);
+                F2.ForeColor = Color.GreenYellow;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //************************************************************
+            //movimientos con contador == 9 fichas blancas
+            if (e.CommandName == "C1" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                C1.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B1" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                B1.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B6" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                B6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A2" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                A2.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B2" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B7" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                B7.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G6" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "H5" && conteoBlanco == 9)
+            {
+                seleccionFichaNegra(sender);
+                H5.ForeColor = Color.Red;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**************************************************
+            //movimiento con contador == 9 ficha negra
+            if (e.CommandName == "B5" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                B5.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "C8" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                C8.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "D7" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                D7.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "D2" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                D2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "E2" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                E2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "F2" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                F2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "G2" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                G2.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H3" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                H3.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            if (e.CommandName == "H4" && conteoNegro == 9)
+            {
+                seleccionFichaNegra(sender);
+                H4.ForeColor = Color.Black;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+            //************************************************************
+            //movimientos con contador == 10 fichas blancas
+            if (e.CommandName == "C1" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                C1.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "E2" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                E2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B1" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                B1.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B2" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                B2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A2" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                A2.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "A4" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                A4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "B4" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                B4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "C7" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                C7.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "C8" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                C8.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "D8" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                D8.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "D7" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                D7.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "F6" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                F6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "G6" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                G6.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "H5" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                H5.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            if (e.CommandName == "H4" && conteoBlanco == 10)
+            {
+                seleccionFichaNegra(sender);
+                H4.ForeColor = Color.White;
+                cronometro2();
+                contarMovimientosNegros();
+                turnoColorVerde();
+            }
+            //**************************************************
+            //movimiento con contador == 10 ficha negra()VERDE
+            if (e.CommandName == "D3" && conteoNegro == 10 && e.CommandName=="D2" && e.CommandName=="D4")
+            {
+                seleccionFichaNegra(sender);
+                D3.ForeColor = Color.Red;
+                cronometro1();
+                contarMovimientosBlancos();
+                turnoColorRojo();
+
+            }
+
+
+
+
 
 
         }
