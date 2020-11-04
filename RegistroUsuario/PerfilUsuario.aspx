@@ -97,7 +97,8 @@
             width: 23px;
             position: absolute;
             left: 356px;
-            top: 249px;
+            top: 247px;
+            height: 23px;
         }
         .auto-style15 {
             width: 127px;
@@ -570,6 +571,14 @@
             top: 251px;
         }
        
+        .auto-style83 {
+            width: 468px;
+            height: 24px;
+            position: absolute;
+            left: 184px;
+            top: 550px;
+        }
+       
     </style>
 </head>
 <body>
@@ -624,7 +633,7 @@
                 <br />
                 <asp:TextBox ID="txtPuntos1" runat="server" CssClass="auto-style13" Font-Size="X-Large">0</asp:TextBox>
                 <asp:TextBox ID="txtPuntos2" runat="server" CssClass="auto-style14" Font-Size="X-Large">0</asp:TextBox>
-                <asp:Button ID="btnAvanzar" runat="server" BackColor="Lime" BorderColor="White" CssClass="auto-style18" Font-Size="Large" OnClick="btnAvanzar_Click" Text="Avanzar" />
+                <asp:Button ID="btnAvanzar" runat="server" BackColor="Lime" BorderColor="White" CommandName="btnAvanzar" CssClass="auto-style18" Font-Size="Large" OnCommand="avanzar" Text="Avanzar" />
                 <asp:Label ID="Label21" runat="server" BackColor="Black" BorderColor="#003300" CssClass="auto-style33" Font-Size="X-Large" ForeColor="White" Text="  2"></asp:Label>
                 <asp:Label ID="Label22" runat="server" BackColor="Black" BorderColor="#003300" CssClass="auto-style37" Font-Size="X-Large" ForeColor="White" Text="5"></asp:Label>
                 <asp:Label ID="Label23" runat="server" BackColor="Black" BorderColor="#003300" CssClass="auto-style34" Font-Size="X-Large" ForeColor="White" Text="3"></asp:Label>
@@ -675,6 +684,7 @@
                 <asp:Label ID="Label31" runat="server" BackColor="Black" BorderColor="#003300" CssClass="auto-style32" Font-Size="Large" ForeColor="White" Text="  PTS        "></asp:Label>
                 <br />
                 <asp:TextBox ID="txtRonda" runat="server" CssClass="auto-style82" Width="34px"></asp:TextBox>
+                <asp:Button ID="btnLimpiarTabla" runat="server" BackColor="#33CC33" BorderColor="White" CommandName="btnLimpiarTabla" CssClass="auto-style83" Font-Size="Large" OnCommand="avanzar" Text="Limpiar" />
             </asp:Panel>
             <br />
             <br />
