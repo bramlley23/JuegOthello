@@ -163,7 +163,7 @@
     <Content Include="Site.Master" />
     <Content Include="TableroContraMaquina.aspx" />
     <Content Include="TableroJugador1_VRS_Jugador2.aspx" />
-    <Content Include="TableroTorneo.aspx" />
+    <Content Include="TableroDinamico.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -261,12 +261,12 @@
     <Compile Include="TableroJugador1_VRS_Jugador2.aspx.designer.cs">
       <DependentUpon>TableroJugador1_VRS_Jugador2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="TableroTorneo.aspx.cs">
-      <DependentUpon>TableroTorneo.aspx</DependentUpon>
+    <Compile Include="TableroDinamico.aspx.cs">
+      <DependentUpon>TableroDinamico.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="TableroTorneo.aspx.designer.cs">
-      <DependentUpon>TableroTorneo.aspx</DependentUpon>
+    <Compile Include="TableroDinamico.aspx.designer.cs">
+      <DependentUpon>TableroDinamico.aspx</DependentUpon>
     </Compile>
     <Compile Include="Usuarios.cs" />
     <Compile Include="UsuariosDAL.cs" />

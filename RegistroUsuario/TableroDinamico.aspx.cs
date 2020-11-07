@@ -13,5 +13,15 @@ namespace RegistroUsuario
         {
 
         }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button1_Command(object sender, CommandEventArgs e)
+        {
+
+        }
     }
 }

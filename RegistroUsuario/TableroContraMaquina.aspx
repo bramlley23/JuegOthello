@@ -409,7 +409,7 @@
         <br />
 &nbsp;<asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
+        <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" OnClick="Button103_Click1" />
     </form>
 </body>
 </html>

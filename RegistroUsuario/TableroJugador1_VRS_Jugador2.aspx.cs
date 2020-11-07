@@ -3479,5 +3479,10 @@ namespace RegistroUsuario
                 lblMinutos2.Text = duracionMinutos2.ToString();
             }
         }
+
+        protected void Button103_Click1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
