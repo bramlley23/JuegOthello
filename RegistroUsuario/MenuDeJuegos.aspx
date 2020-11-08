@@ -26,11 +26,25 @@
             right: 777px;
         }
         .auto-style5 {
-            width: 210px;
-            height: 41px;
+            width: 203px;
             position: absolute;
             left: 58px;
-            top: 240px;
+            top: 248px;
+            height: 34px;
+        }
+        .auto-style6 {
+            width: 197px;
+            height: 42px;
+            position: absolute;
+            left: 64px;
+            top: 188px;
+        }
+        .auto-style7 {
+            width: 183px;
+            height: 34px;
+            position: absolute;
+            left: 73px;
+            top: 136px;
         }
         </style>
 </head>
@@ -41,7 +55,9 @@
         <asp:Panel ID="Panel1" runat="server" BackColor="#000066" Height="401px" Width="302px" HorizontalAlign="Center">
              <asp:Button ID="btnJugador1vsJugador2" runat="server" Text="Jugador vrs Jugador" BackColor="#6600FF" BorderColor="White" Font-Size="Medium" ForeColor="White" OnClick="btnJugador1vsJugador2_Click" CssClass="auto-style3" />
               <asp:Button ID="Button1" runat="server" BackColor="#6600FF" BorderColor="White" CssClass="auto-style4" Font-Size="Medium" ForeColor="White" OnClick="Button1_Click" Text="Vrs Maquina" />
-             <asp:Button ID="Button2" runat="server" BackColor="#6600FF" BorderColor="White" CssClass="auto-style5" Font-Size="Medium" ForeColor="White" OnClick="irMenu" Text="Xtreme Inverso" />
+             <asp:Button ID="Button2" runat="server" BackColor="#6600FF" BorderColor="White" CssClass="auto-style5" Font-Size="Small" ForeColor="White" OnClick="Button2_Click" Text="Othellos Xtreme" />
+             <asp:Button ID="Button3" runat="server" BackColor="#6600FF" BorderColor="White" CssClass="auto-style6" Font-Size="Medium" ForeColor="White" OnClick="Button3_Click" Text="Gestor De Partidas" />
+             <asp:Button ID="Button4" runat="server" BackColor="#6600FF" BorderColor="White" CssClass="auto-style7" Font-Size="Medium" ForeColor="White" OnClick="Button4_Click" Text="Esquema De Juego" />
             </asp:Panel>
     </form>
 </body>

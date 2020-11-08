@@ -3483,6 +3483,7 @@ namespace RegistroUsuario
         protected void Button104_Click(object sender, EventArgs e)
         {
             Response.Write("hola");
+            
         }
 
        

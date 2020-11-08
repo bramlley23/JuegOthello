@@ -21,10 +21,34 @@ namespace RegistroUsuario
 
         }//fin de metodo btn jugador1 vrs jugador2
 
-        protected void irMenu(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-         
+            Response.Write("Hola Mundo");
+            TableroContraMaquina gr = new TableroContraMaquina();
+            Response.Redirect("TableroContraMaquina.aspx");
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Write("Hola Mundo2");
+            othelloXtreneNormal otrs = new othelloXtreneNormal();
             Response.Redirect("othelloXtreneNormal.aspx");
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Response.Write("Hola Mundo3");
+            PerfilUsuario pfl = new PerfilUsuario();
+            Response.Redirect("PerfilUsuario.aspx");
+
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            Response.Write("Hola Mundo4");
+            DiagramaDeTorneos dgrtns = new DiagramaDeTorneos();
+            Response.Redirect("DiagramaDeTorneos.aspx");
+
         }
     }
 }
