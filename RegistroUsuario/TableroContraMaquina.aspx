@@ -54,8 +54,7 @@
                         
                   
                     <td style="background-color: #FFFF00">
-                        <asp:Button ID="btnContraMaquina" runat="server" BackColor="#6666FF" Font-Size="Medium" ForeColor="White" Height="40px" Text="Volver Al Menu" Width="266px" />
-                    </td>
+                        </td>
                         
                   
                 </tr>
@@ -409,7 +408,8 @@
         <br />
 &nbsp;<asp:Button ID="Button102" runat="server" Height="37px" Text="Guardar" Width="173px" BackColor="Blue" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" OnClick="Button103_Click1" />
+        <asp:Button ID="Button103" runat="server" Height="37px" Text="Cargar Juego" Width="168px" BackColor="#0033CC" BorderColor="Yellow" Font-Size="Medium" ForeColor="White" />
+    &nbsp;&nbsp;&nbsp;
     </form>
 </body>
 </html>

@@ -118,7 +118,50 @@
                             panel1.Controls.Add(boton);
                             panel1.Controls.Add(new LiteralControl(""));
                         }
-                    } 
+                        else if (numPanel==8)
+                        {
+                            
+                            if (i == 1 && j == 1 || i == 1 && j == minimo)
+                            {
+                                boton.Text = ".";
+
+
+                            }
+                            else if (i == 1)
+                            {
+                                boton.Text = abcdario[j - 2];//j-1
+                            }
+                            else if (i == 2 && j == 1 || i == 2 && j == minimo || i == 3 && j == minimo
+                                    || i == 3 && j == 1 || i == 4 && j == minimo
+                                    || i == 4 && j == 1 || i == 5 && j == minimo
+                                    || i == 5 && j == 1)
+                            {
+                                boton.Text = (i - 1).ToString();//i==1
+                            }
+
+                            else if (i == maximo && j == minimo || i == maximo && j == 1)
+                            {
+                                boton.Text = ".";
+
+                            }
+                            else if (i == maximo)
+                            {
+                                boton.Text = abcdario[j - 2];
+                            }
+                            else
+                            {
+                                boton.Text = ".";
+                            }
+                            boton.ID = "btnButon" + (j).ToString();
+
+                            boton.Height = 40;
+                            boton.Width = 40;
+                            panel2.Controls.Add(boton);
+                            panel2.Controls.Add(new LiteralControl(""));
+
+                        }
+
+                    }
 
 
 
@@ -144,10 +187,17 @@
         <asp:TextBox ID="txtNumPanel" runat="server" Height="29px" Width="25px"></asp:TextBox>
        <br />
         <asp:Panel ID="panel1" runat="server" 
-       BackColor="GreenYellow" 
+        
        Width="240px" 
        Height="240">
+        
+         </asp:Panel>
+          <asp:Panel ID="panel2" runat="server" 
+       
+       Width="320px" 
+       Height="320">
        </asp:Panel> 
+            
        </form>
 </body>
 </html>

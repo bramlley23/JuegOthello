@@ -19,17 +19,12 @@ namespace RegistroUsuario
             TableroJugador1_VRS_Jugador2 j1VRsj2 = new TableroJugador1_VRS_Jugador2();
             Response.Redirect("TableroJugador1_VRS_Jugador2.aspx");
 
-        }
+        }//fin de metodo btn jugador1 vrs jugador2
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void irMenu(object sender, EventArgs e)
         {
-            TableroContraMaquina tableroMaquina = new TableroContraMaquina();
-            Response.Redirect("TableroContraMaquina.aspx");
-        }
-
-        protected void btnCampeonato_Click(object sender, EventArgs e)
-        {
-
+         
+            Response.Redirect("othelloXtreneNormal.aspx");
         }
     }
 }
